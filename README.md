@@ -1,3 +1,3 @@
-# @straw-hat/CHANGE_ME_PACKAGE_NAME
+# @straw-hat/jest-config-chain
 
 ## Usage
