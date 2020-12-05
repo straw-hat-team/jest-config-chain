@@ -12,7 +12,7 @@ const { JestConfigChain } = require('@straw-hat/jest-config-chain');
 const config = new JestConfigChain();
 
 config
-  .setupFiles
+  .setupFilesAfterEnv
     .add('app', '<rootDir>/jest.setup.js')
     .end()
   .testMatch
