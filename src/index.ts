@@ -60,7 +60,7 @@ export class ModulePaths extends OrderableChainedMap<JestConfigChain> {
   }
 }
 
-export class ModuleNameMapper extends OrderableChainedMap<JestConfigChain, string> {
+export class ModuleNameMapper extends OrderableChainedMap<JestConfigChain, string | string[]> {
   constructor(parent: JestConfigChain) {
     super(parent, {
       name: 'jestConfig.moduleNameMapper',
