@@ -30,6 +30,7 @@ export class ModuleDirectories extends OrderableChainedMap<JestConfigChain> {
     super(parent, {
       name: 'jestConfig.moduleDirectories',
       asArray: true,
+      emptyAsUndefined: true,
     });
   }
 }
@@ -38,6 +39,7 @@ export class ModuleFileExtensions extends OrderableChainedMap<JestConfigChain> {
     super(parent, {
       name: 'jestConfig.moduleFileExtensions',
       asArray: true,
+      emptyAsUndefined: true,
     });
   }
 }
@@ -47,6 +49,7 @@ export class TransformIgnorePatterns extends ChainedMap<JestConfigChain> {
     super(parent, {
       name: 'jestConfig.transformIgnorePatterns',
       asArray: true,
+      emptyAsUndefined: true,
     });
   }
 }
@@ -56,6 +59,7 @@ export class ModulePaths extends OrderableChainedMap<JestConfigChain> {
     super(parent, {
       name: 'jestConfig.modulePaths',
       asArray: true,
+      emptyAsUndefined: true,
     });
   }
 }
@@ -64,6 +68,7 @@ export class ModuleNameMapper extends OrderableChainedMap<JestConfigChain, strin
   constructor(parent: JestConfigChain) {
     super(parent, {
       name: 'jestConfig.moduleNameMapper',
+      emptyAsUndefined: true,
     });
   }
 }
@@ -72,28 +77,154 @@ export class Transform extends OrderableChainedMap<JestConfigChain> {
   constructor(parent: JestConfigChain) {
     super(parent, {
       name: 'jestConfig.transform',
+      emptyAsUndefined: true,
     });
   }
 }
 
-export class CollectCoverageFrom extends ChainedSet<JestConfigChain, string> {}
-export class CoveragePathIgnorePatterns extends ChainedSet<JestConfigChain, string> {}
-export class ExtraGlobals extends ChainedSet<JestConfigChain, string> {}
-export class ForceCoverageMatch extends ChainedSet<JestConfigChain, string> {}
-export class TestRegex extends ChainedSet<JestConfigChain, string> {}
-export class TestPathIgnorePatterns extends ChainedSet<JestConfigChain, string> {}
-export class TestMatch extends ChainedSet<JestConfigChain, string> {}
-export class WatchPathIgnorePatterns extends ChainedSet<JestConfigChain, string> {}
-export class SnapshotSerializers extends ChainedSet<JestConfigChain, string> {}
-export class ModulePathIgnorePatterns extends ChainedSet<JestConfigChain, string> {}
-export class Roots extends ChainedSet<JestConfigChain, string> {}
-export class SetupFiles extends ChainedSet<JestConfigChain, string> {}
-export class WatchPlugins extends ChainedSet<JestConfigChain, WatchPlugin> {}
-export class SetupFilesAfterEnv extends ChainedSet<JestConfigChain, string> {}
-export class UnmockedModulePathPatterns extends ChainedSet<JestConfigChain, string> {}
-export class Reporters extends ChainedSet<JestConfigChain, Reporter> {}
-export class CoverageReporters extends ChainedSet<JestConfigChain, CoverageReporter> {}
-export class Projects extends ChainedSet<JestConfigChain, Project> {}
+export class CollectCoverageFrom extends ChainedSet<JestConfigChain, string> {
+  constructor(parent: JestConfigChain) {
+    super(parent, {
+      emptyAsUndefined: true,
+    });
+  }
+}
+
+export class CoveragePathIgnorePatterns extends ChainedSet<JestConfigChain, string> {
+  constructor(parent: JestConfigChain) {
+    super(parent, {
+      emptyAsUndefined: true,
+    });
+  }
+}
+
+export class ExtraGlobals extends ChainedSet<JestConfigChain, string> {
+  constructor(parent: JestConfigChain) {
+    super(parent, {
+      emptyAsUndefined: true,
+    });
+  }
+}
+
+export class ForceCoverageMatch extends ChainedSet<JestConfigChain, string> {
+  constructor(parent: JestConfigChain) {
+    super(parent, {
+      emptyAsUndefined: true,
+    });
+  }
+}
+
+export class TestRegex extends ChainedSet<JestConfigChain, string> {
+  constructor(parent: JestConfigChain) {
+    super(parent, {
+      emptyAsUndefined: true,
+    });
+  }
+}
+
+export class TestPathIgnorePatterns extends ChainedSet<JestConfigChain, string> {
+  constructor(parent: JestConfigChain) {
+    super(parent, {
+      emptyAsUndefined: true,
+    });
+  }
+}
+
+export class TestMatch extends ChainedSet<JestConfigChain, string> {
+  constructor(parent: JestConfigChain) {
+    super(parent, {
+      emptyAsUndefined: true,
+    });
+  }
+}
+
+export class WatchPathIgnorePatterns extends ChainedSet<JestConfigChain, string> {
+  constructor(parent: JestConfigChain) {
+    super(parent, {
+      emptyAsUndefined: true,
+    });
+  }
+}
+
+export class SnapshotSerializers extends ChainedSet<JestConfigChain, string> {
+  constructor(parent: JestConfigChain) {
+    super(parent, {
+      emptyAsUndefined: true,
+    });
+  }
+}
+
+export class ModulePathIgnorePatterns extends ChainedSet<JestConfigChain, string> {
+  constructor(parent: JestConfigChain) {
+    super(parent, {
+      emptyAsUndefined: true,
+    });
+  }
+}
+
+export class Roots extends ChainedSet<JestConfigChain, string> {
+  constructor(parent: JestConfigChain) {
+    super(parent, {
+      emptyAsUndefined: true,
+    });
+  }
+}
+
+export class SetupFiles extends ChainedSet<JestConfigChain, string> {
+  constructor(parent: JestConfigChain) {
+    super(parent, {
+      emptyAsUndefined: true,
+    });
+  }
+}
+
+export class WatchPlugins extends ChainedSet<JestConfigChain, WatchPlugin> {
+  constructor(parent: JestConfigChain) {
+    super(parent, {
+      emptyAsUndefined: true,
+    });
+  }
+}
+
+export class SetupFilesAfterEnv extends ChainedSet<JestConfigChain, string> {
+  constructor(parent: JestConfigChain) {
+    super(parent, {
+      emptyAsUndefined: true,
+    });
+  }
+}
+
+export class UnmockedModulePathPatterns extends ChainedSet<JestConfigChain, string> {
+  constructor(parent: JestConfigChain) {
+    super(parent, {
+      emptyAsUndefined: true,
+    });
+  }
+}
+
+export class Reporters extends ChainedSet<JestConfigChain, Reporter> {
+  constructor(parent: JestConfigChain) {
+    super(parent, {
+      emptyAsUndefined: true,
+    });
+  }
+}
+
+export class CoverageReporters extends ChainedSet<JestConfigChain, CoverageReporter> {
+  constructor(parent: JestConfigChain) {
+    super(parent, {
+      emptyAsUndefined: true,
+    });
+  }
+}
+
+export class Projects extends ChainedSet<JestConfigChain, Project> {
+  constructor(parent: JestConfigChain) {
+    super(parent, {
+      emptyAsUndefined: true,
+    });
+  }
+}
 
 export class JestConfigChain extends ChainedMap<undefined> {
   constructor() {

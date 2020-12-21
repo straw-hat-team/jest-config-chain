@@ -1,6 +1,6 @@
 {
   "name": "@straw-hat/jest-config-chain",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Chainable configuration for Jest",
   "repository": {
     "type": "git",
@@ -31,7 +31,7 @@
     "README.md"
   ],
   "dependencies": {
-    "@straw-hat/chainable-config": "^0.8.0"
+    "@straw-hat/chainable-config": "^0.9.0"
   },
   "devDependencies": {
     "@straw-hat/prettier-config": "^1.2.0",

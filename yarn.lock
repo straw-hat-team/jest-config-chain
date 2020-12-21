@@ -500,10 +500,10 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@straw-hat/chainable-config@^0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@straw-hat/chainable-config/-/chainable-config-0.8.0.tgz#78389311016e2ea40aa9616a16efe3918c034193"
-  integrity sha512-HWzCu1pfLLqkSF2bi+pgkiKzRJ+KzCUVKesUtk/yA5QQzgpcv3npLzSLLSI0n3At3ZrUmMSVgI4iKEU/xFFeLw==
+"@straw-hat/chainable-config@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@straw-hat/chainable-config/-/chainable-config-0.9.0.tgz#b7eacd110b2a47eba5afb57d2463d34922a1d4e3"
+  integrity sha512-153RMZ9QCxvYoGwiWXTFokwkJLbea5JEy5qBe7ZMuHMF77TwMf7hshCrCSqJeR1EGEZI+B+VE9BmvshD/B5Msg==
   dependencies:
     deepmerge "^4.2.2"
     is-mergeable-object "^1.1.1"
